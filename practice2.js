@@ -52,6 +52,6 @@ function sumTriple(num1, num2) {
         return (num1 + num2)
     }
 }
-
+console.log(sumTriple(10, 30))
 console.log(sumTriple(10, 10))
-console.log(sumTriple(10, 20))
+
