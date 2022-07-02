@@ -41,4 +41,17 @@ let extension = filename.split(".").pop();
 
 console.log(extension)
 
+// Compute the sum of the two given integers. 
+// If the two values are same, then returns triple their sum
 
+function sumTriple(num1, num2) {
+    if (num1 === num2) {
+        return  3 * (num1 + num2);
+    }else
+    {
+        return (num1 + num2)
+    }
+}
+
+console.log(sumTriple(10, 10))
+console.log(sumTriple(10, 20))
