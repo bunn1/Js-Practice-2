@@ -23,13 +23,20 @@ console.log(reverse(num))
 
 // Random number between 1 - 10
 
-let theRandomNumber = Math.floor(Math.random() * 10) + 1
-console.log(theRandomNumber)
-let chosenNumber = prompt("Enter a number")
-
-if (theRandomNumber === chosenNumber) {
-       console.log("Good Work")
-}else {
-     console.log("Not Matched")
-}
+// let theRandomNumber = Math.floor(Math.random() * 10) + 1
 // console.log(theRandomNumber)
+// let chosenNumber = prompt("Enter a number")
+
+// if (theRandomNumber === chosenNumber) {
+//        console.log("Good Work")
+// }else {
+//      console.log("Not Matched")
+// }
+
+
+// Get the extension of a filename
+
+let filename ="index.js";
+let arr = filename.split(".").pop();
+
+
