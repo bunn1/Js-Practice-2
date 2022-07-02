@@ -37,6 +37,8 @@ console.log(reverse(num))
 // Get the extension of a filename
 
 let filename ="index.js";
-let arr = filename.split(".").pop();
+let extension = filename.split(".").pop();
+
+console.log(extension)
 
 
