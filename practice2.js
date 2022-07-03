@@ -21,6 +21,7 @@ const reverse = (num) => parseInt(String(num)
 
 console.log(reverse(num))
 
+
 // Random number between 1 - 10
 
 // let theRandomNumber = Math.floor(Math.random() * 10) + 1
@@ -71,13 +72,11 @@ let number1 = prompt('Enter a number');
 
 if (number1 > 0) {
     console.log("The number is positive");
- }
-    else if (number1 == 0) {
-        console.log("The number is zero")
-    }
-    else{
-        console.log("The number is negative")
-    }
+} else if (number1 == 0) {
+    console.log("The number is zero")
+} else {
+    console.log("The number is negative")
+}
 
 // let number = prompt("Enter a number")
 
@@ -99,22 +98,74 @@ if (number1 > 0) {
 
 
 
-function removeCharacter (str, char_pos) {
+function removeCharacter(str, char_pos) {
     string1 = str.substring(0, "")
     string2 = str.substring(char_pos + 1, str.length)
-    return (string1 + string2) 
+    return (string1 + string2)
 }
 
-console.log(removeCharacter("Niclas",0));
-console.log(removeCharacter("Niclas",3));
-console.log(removeCharacter("Niclas",5));
+console.log(removeCharacter("Niclas", 0));
+console.log(removeCharacter("Niclas", 3));
+console.log(removeCharacter("Niclas", 5));
 
 
-// Program to check whether a string starts with 'Java' and false otherwise
+// Program to check whether a string starts with 'world' and false otherwise
 
 
 
+// let text = "Hello world, welcome to the universe.";
+// let result = text.startsWith("world");
+// document.getElementById("demo").innerText = result;
 
-let text = "Hello world, welcome to the universe.";
-let result = text.startsWith("world");
-document.getElementById("demo").innerText = result;
+
+
+// Function that checks whether a passed string is palindrome or not?
+
+// function checkPalindrome(str) {
+
+//     // Find the length of string
+//     const len = str.length;
+
+//     // loop through half of the string
+//     for (let i = 0; i < len / 2; i++) {
+
+//         // check if first and last string are same
+//         if (string[i] != string[len - 1 - i]) {
+//             return "It is not a palindrome";
+//         }
+//     }
+//     return "It is a palindrome";
+// }
+
+// // input
+// let string = prompt("Enter a string");
+
+// // call the function
+// const value = checkPalindrome(string);
+
+// console.log(value);
+
+// Function that checks whether a passed string is palindrome or not?
+
+
+function palindrome(str) {
+    const reversed = str
+        .split('')
+        .reverse()
+        .join('');
+
+    return str === reversed;
+}
+
+// Write a JavaScript function that generates all combinations of a string.
+
+function generateCombinations(combinations) {
+    let list_of_strings = [];
+    for (let i = 0; i < combinations.length; i++){ 
+    for (let j = 0; j < combinations.length + 1; j++){ 
+    list_of_strings.push(combinations.slice(i, j))
+}
+}
+return list_of_strings
+}
+console.log(generateCombinations("dog"))
