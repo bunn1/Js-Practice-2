@@ -93,3 +93,24 @@ if (number1 > 0) {
 //     default:
 //         break;
 // }
+
+// remove a character at the specified position of a given string and
+// return the new string
+
+
+
+function removeCharacter (str, char_pos) {
+    string1 = str.substring(0, "")
+    string2 = str.substring(char_pos + 1, str.length)
+    return (string1 + string2) 
+}
+
+console.log(removeCharacter("Niclas",0));
+console.log(removeCharacter("Niclas",3));
+console.log(removeCharacter("Niclas",5));
+
+
+// let string1 = "Welcome to my home"
+// let result = string1.indexOf ("Welcome")
+// document.getElementById("computeSum").innerHTML = result;
+
