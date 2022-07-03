@@ -57,6 +57,20 @@ console.log(sumTriple(10, 10))
 
 // check two given numbers and return true if one of the number is 50
 // or if their sum is 50
+let result = document.getElementById("computeSum").value
+
+    switch ((x == 50 || y == 50) || (x + y == 50)) {
+        case value:
+        console.log("true")
+            break;
+    
+        default:
+            break;
+    }
+
+
+
+
 
 function givenNumbers(x, y) {
     return ((x == 50 || y == 50) || (x + y == 50));
@@ -64,5 +78,3 @@ function givenNumbers(x, y) {
 console.log(givenNumbers(25,25))
 console.log(givenNumbers(30,45))
 console.log(givenNumbers(50,20))
-
- 
