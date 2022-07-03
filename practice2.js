@@ -15,9 +15,9 @@ document.getElementById("demo").innerHTML =
 const num = 12345;
 
 const reverse = (num) => parseInt(String(num)
-.split(' ')
-.reverse()
-.join(' '), 10);
+    .split(' ')
+    .reverse()
+    .join(' '), 10);
 
 console.log(reverse(num))
 
@@ -36,7 +36,7 @@ console.log(reverse(num))
 
 // Get the extension of a filename
 
-let filename ="index.js";
+let filename = "index.js";
 let extension = filename.split(".").pop();
 
 console.log(extension)
@@ -46,9 +46,8 @@ console.log(extension)
 
 function sumTriple(num1, num2) {
     if (num1 === num2) {
-        return  3 * (num1 + num2);
-    }else
-    {
+        return 3 * (num1 + num2);
+    } else {
         return (num1 + num2)
     }
 }
@@ -57,24 +56,40 @@ console.log(sumTriple(10, 10))
 
 // check two given numbers and return true if one of the number is 50
 // or if their sum is 50
-let result = document.getElementById("computeSum").value
-
-    switch ((x == 50 || y == 50) || (x + y == 50)) {
-        case value:
-        console.log("true")
-            break;
-    
-        default:
-            break;
-    }
-
-
-
-
 
 function givenNumbers(x, y) {
     return ((x == 50 || y == 50) || (x + y == 50));
 }
-console.log(givenNumbers(25,25))
-console.log(givenNumbers(30,45))
-console.log(givenNumbers(50,20))
+console.log(givenNumbers(25, 25))
+console.log(givenNumbers(30, 45))
+console.log(givenNumbers(50, 20))
+
+// check from two given integers, whether one is positive and
+//  another one is negative 
+
+let number1 = prompt('Enter a number');
+
+if (number1 > 0) {
+    console.log("The number is positive");
+ }
+    else if (number1 == 0) {
+        console.log("The number is zero")
+    }
+    else{
+        console.log("The number is negative")
+    }
+
+// let number = prompt("Enter a number")
+
+// switch (number) {
+//     case (number > 20):
+//         console.log("The number is positive")
+//         break;
+
+//     case (number < 100):
+//         console.log("The number is negative")
+//         break;
+
+//     default:
+//         break;
+// }
