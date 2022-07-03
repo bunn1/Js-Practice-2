@@ -110,7 +110,11 @@ console.log(removeCharacter("Niclas",3));
 console.log(removeCharacter("Niclas",5));
 
 
-// let string1 = "Welcome to my home"
-// let result = string1.indexOf ("Welcome")
-// document.getElementById("computeSum").innerHTML = result;
+// Program to check whether a string starts with 'Java' and false otherwise
 
+
+
+
+let text = "Hello world, welcome to the universe.";
+let result = text.startsWith("world");
+document.getElementById("demo").innerText = result;
