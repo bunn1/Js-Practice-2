@@ -5,9 +5,9 @@ document.getElementById("demo").innerHTML =
 
 // Write a JavaScript program to print the contents of the current window
 
-// function print_current_page() {
-//     window.print();
-// }
+function print_current_page() {
+    window.print();
+}
 
 // Write a JavaScript function that reverse a number
 
@@ -181,3 +181,17 @@ console.log(words)
 window.alert(words)
 
 
+// Copy string to clipboard
+
+// Get the text field
+let copyText = document.getElementById("myInput");
+
+
+// Select the textfield
+copyText.select();
+copyText.setSelectionRange(0, 99999); // For mobile devices
+
+// Copy the text inside the text field
+navigator.clipboard.writeText(copyText.value);
+
+let result = document.getElementById("text").innerHTML = copyText.value
