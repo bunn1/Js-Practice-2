@@ -169,3 +169,15 @@ function generateCombinations(combinations) {
 return list_of_strings
 }
 console.log(generateCombinations("dog"))
+
+// function that returns a passed string with words in alphabetical order
+
+let words = ["javascript", "html", "css"];
+words.sort(function(a, b){
+    return a.length - b.length;
+
+});
+console.log(words)
+window.alert(words)
+
+
