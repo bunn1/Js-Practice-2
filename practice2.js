@@ -186,7 +186,6 @@ window.alert(words)
 // Get the text field
 let copyText = document.getElementById("myInput");
 
-
 // Select the textfield
 copyText.select();
 copyText.setSelectionRange(0, 99999); // For mobile devices
@@ -195,3 +194,19 @@ copyText.setSelectionRange(0, 99999); // For mobile devices
 navigator.clipboard.writeText(copyText.value);
 
 alert("Copied the text: " + copyText.value);
+
+//  Remove a character at the specified position of a given
+//  string and return the new string
+
+
+function remove_character(str, char_pos) 
+ {
+  part1 = str.substring(0, char_pos);
+  part2 = str.substring(char_pos + 1, str.length);
+  return (part1 + part2);
+ }
+
+ console.log(remove_character("Python",0))
+// console.log(remove_character("Python",0));
+// console.log(remove_character("Python",3));
+// console.log(remove_character("Python",5));
